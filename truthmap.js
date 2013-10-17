@@ -10,5 +10,7 @@ var truthmap = {
         ["div.cont","מדי שנה", "long-time-no-id.html"],
         ["div.cont","ובמאגר מידע","law-name-says-db.html"],
         ["div.cont","שאינם ניתנים לזיוף","bio-not-against-forgery.html"],
+        ["div.cont","מה מייחד אותו?","passport-not-unique.html"],
+        ["div.cont","יחסוך זמן יקר","passport-saves-time.html"],
     ]   
 }
