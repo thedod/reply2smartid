@@ -1,6 +1,6 @@
 // This file should be uploaded to the tomodo faqbuster mod
-// every time it's modidied, but we keep it here (and not at faqbuster)
-// to better separate between site-specific and general-purpose code
+// each time it's modified, but we keep it at reply2smartid (and not at faqbuster)
+// for better separation between site-specific and general-purpose code
 var truthmap = {
     '/Pages/default.aspx': [
         ["div.HPInformationTitle","איך מקבלים תעודת זהות חכמה ודרכון חכם?", "how-to-get-smart.html"]
