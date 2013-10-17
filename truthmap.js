@@ -9,5 +9,6 @@ var truthmap = {
         ["div.cont","הכולל אמצעים ונתונים ביומטריים", "bio-id-needs-no-db.html"],
         ["div.cont","מדי שנה", "long-time-no-id.html"],
         ["div.cont","ובמאגר מידע","law-name-says-db.html"],
+        ["div.cont","שאינם ניתנים לזיוף","bio-not-against-forgery.html"],
     ]   
 }
