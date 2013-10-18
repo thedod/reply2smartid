@@ -3,7 +3,7 @@
 // for better separation between site-specific and general-purpose code
 var truthmap = {
     '/Pages/default.aspx': [
-        ["span.rmText.rmExpandDown","מידע כללי", "welcome.html"],
+        ["span.rmText","המאגר הביומטרי", "welcome.html"],
         ["div.HPInformationTitle","איך מקבלים תעודת זהות חכמה ודרכון חכם?", "how-to-get-smart.html"],
     ], 
     '/GeneralInformation/Pages/FAQ.aspx': [
