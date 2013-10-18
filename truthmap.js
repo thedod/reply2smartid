@@ -15,5 +15,6 @@ var truthmap = {
         ["div.cont","שימוש בחתימה אלקטרונית","ca-fiasco.html"],
         ["div.cont","יחסוך זמן יקר","passport-saves-time.html"],
         ["div.cont","כל תושב או אזרח","ask-for-id.html"],
+        ["div.cont","במהלך תקופת המבחן","pilot-fixed-game.html"],
     ]   
 }
