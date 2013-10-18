@@ -16,6 +16,6 @@ var truthmap = {
         ["div.cont","יחסוך זמן יקר","passport-saves-time.html"],
         ["div.cont","כל תושב או אזרח","ask-for-id.html"],
         ["div.cont","במהלך תקופת המבחן","pilot-fixed-game.html"],
-        ["div.cont","כתב אישור והסכמה","what-you-agree-to.html"],
+        ["div.cont","במאגר הביומטרי","what-you-agree-to.html"],
     ]   
 }
