@@ -13,5 +13,6 @@ var truthmap = {
         ["div.cont","מה מייחד אותו?","passport-not-unique.html"],
         ["div.cont","שימוש בחתימה אלקטרונית","ca-fiasco.html"],
         ["div.cont","יחסוך זמן יקר","passport-saves-time.html"],
+        ["div.cont","כל תושב או אזרח","ask-for-id.html"],
     ]   
 }
