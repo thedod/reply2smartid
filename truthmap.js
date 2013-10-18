@@ -4,7 +4,7 @@
 var truthmap = {
     '/Pages/default.aspx': [
         ["span.rmText","המאגר הביומטרי", "welcome.html"],
-        ["div.HPInformationTitle","איך מקבלים תעודת זהות חכמה ודרכון חכם?", "how-to-get-smart.html"],
+        //["div.HPInformationTitle","איך מקבלים תעודת זהות חכמה ודרכון חכם?", "how-to-get-smart.html"],
     ], 
     '/GeneralInformation/Pages/FAQ.aspx': [
         ["div.cont","הכולל אמצעים ונתונים ביומטריים", "bio-id-needs-no-db.html"],
