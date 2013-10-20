@@ -18,7 +18,7 @@ var truthmap = {
         ["div.cont","במהלך תקופת המבחן","pilot-fixed-game.html"],
         ["div.cont","במאגר הביומטרי","what-you-agree-to.html"],
         ["div.cont","לא נעשה שימוש בדיו","no-ink-no-db.html"],
-        ["div.cont","תמונת פספורט שצולמה מראש","no-photo-no-db.html"],
         ["div.cont","זהותו של המבקש","initial-verification.html"],
+        ["div.cont","תמונת פספורט שצולמה מראש","no-photo-no-db.html"],
     ]   
 }
