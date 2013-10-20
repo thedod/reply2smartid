@@ -20,5 +20,7 @@ var truthmap = {
         ["div.cont","לא נעשה שימוש בדיו","no-ink-no-db.html"],
         ["div.cont","זהותו של המבקש","initial-verification.html"],
         ["div.cont","תמונת פספורט שצולמה מראש","no-photo-no-db.html"],
+        ["div.cont","ולא ניתן יהיה לזייף זהות","bio-not-against-forgery.html"],
+        ["div.cont","לשם מה צריך מאגר ביומטרי?","why-db.html"],
     ]   
 }
