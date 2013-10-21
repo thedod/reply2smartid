@@ -7,7 +7,7 @@ var truthmap = {
         //["div.HPInformationTitle","איך מקבלים תעודת זהות חכמה ודרכון חכם?", "how-to-get-smart.html"],
     ], 
     '/GeneralInformation/Pages/FAQ.aspx': [
-        ["div.cont","הכולל אמצעים ונתונים ביומטריים", "bio-id-needs-no-db.html"],
+        ["div.cont","ביומטריים", "bio-id-needs-no-db.html"],
         ["div.cont","מדי שנה", "long-time-no-id.html"],
         ["div.cont","ובמאגר מידע","law-name-says-db.html"],
         ["div.cont","שאינם ניתנים לזיוף","bio-not-against-forgery.html"],
