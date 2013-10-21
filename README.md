@@ -1,3 +1,3 @@
-Answer iframes for http://replies2gov.tomodo.me/
+Answer iframes for http://is.gd/shtikipedia
 
 Only the gh-pages branch is relevant
