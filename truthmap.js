@@ -1,10 +1,10 @@
 // This file should be uploaded to the tomodo faqbuster mod
 // each time it's modified, but we keep it at reply2smartid (and not at faqbuster)
 // for better separation between site-specific and general-purpose code
+var truthroot = 'http://thedod.github.io/reply2smartid/';
 var truthmap = {
     '/Pages/default.aspx': [
         ["span.rmText","המאגר הביומטרי", "welcome.html"],
-        //["div.HPInformationTitle","איך מקבלים תעודת זהות חכמה ודרכון חכם?", "how-to-get-smart.html"],
     ], 
     '/GeneralInformation/Pages/FAQ.aspx': [
         ["div.cont","ביומטריים", "bio-id-needs-no-db.html"],
