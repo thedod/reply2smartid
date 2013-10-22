@@ -1,6 +1,40 @@
 <!doctype html>
-<html lang="he"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><link href="bootstrap.rtl.min.css" rel="stylesheet" media="screen"></head><body dir="rtl"><div class="container"><div class="row"><div class="col-12">
-כאן מרוכז התוכן של
-<strong><a target="_top" href="http://replies2gov.tomodo.me/GeneralInformation/Pages/FAQ.aspx">ההערות</a></strong> (בצהוב)
-של <a target="_top" href="http://no2bio.org">No2Bio</a> על תעמולת הרשות הביומטרית.
-</div></div></div></body></html>
+<html lang="he"><head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"><link href="bootstrap.rtl.min.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="gh-fork-ribbon.css" />
+</head><body dir="rtl"><div class="container"><div class="row"><div class="col-12">
+כאן מרוכז התוכן של הפופ-אפים שמופיעים
+ב<strong><a target="_top" href="http://is.gd/shtikipedia">שטיקיפדיה</a></strong>
+של <a target="_top" href="http://no2bio.org">No2Bio</a>.
+<ul id="items"> </ul>
+</div></div></div>
+    <div class="github-fork-ribbon-wrapper left">
+        <div class="github-fork-ribbon">
+            <a href="https://github.com/thedod/reply2smartid/tree/gh-pages">מזלגו את התוכן</a>
+        </div>
+    </div>
+    <div class="github-fork-ribbon-wrapper left-bottom">
+        <div class="github-fork-ribbon">
+            <a href="http://thedod.github.io/faqbuster/">מזלגו את הקוד</a>
+        </div>
+    </div>
+<script type="text/javascript" src="truthmap.js"></script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+  for (page in truthmap) {
+    console.log(page);
+    var links = truthmap[page];
+    var section=$('<ul/>');
+    for (var i=0; i<links.length; i++) {
+      section.append(
+        $('<li/>').append(
+          $('<a/>').attr('target','_blank').attr('href',links[i][2]).text(links[i][1])
+      ));
+    };
+    $('#items').append($('<li/>').html(page).append(section));
+    console.log(section.html());
+  };
+});
+</script>
+</body></html>
