@@ -21,5 +21,8 @@ var truthmap = {
         ["div.cont","זהותו של המבקש","initial-verification.html"],
         ["div.cont","תמונת פספורט שצולמה מראש","no-photo-no-db.html"],
         ["div.cont","לשם מה צריך מאגר ביומטרי?","why-db.html"],
-    ]   
+    ],   
+    '/GeneralInformation/Pages/BiometricsInWorld.aspx': [
+        ["div.cont","מנפיקות דרכונים אלקטרוניים", "countries.html"],
+    ], 
 }
