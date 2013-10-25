@@ -24,6 +24,5 @@ var truthmap = {
     ],   
     '/GeneralInformation/Pages/BiometricsInWorld.aspx': [
         ["div.cont","מנפיקות דרכונים אלקטרוניים", "countries.html"],
-        ["li.liNoChildren","שאלות ותשובות", "welcome.html"],
     ], 
 }
