@@ -7,9 +7,12 @@
 </head>
 
 <body dir="rtl">
+  <div id="permalink" style="position:fixed; top:1px; left:1px; z-index:42">
+    <a target="_blank" title="קישור קבוע" href="">#</a>
+  </div>
   <div class="container">
-    <div class="page-header text-center">
-        <h1 id="headline" style="display:none"><small><a href="http://is.gd/shtikipedia">שטיקיפדיה</a>
+    <div id="headline" class="page-header text-center" style="display:none">
+        <h1><small><a href="http://is.gd/shtikipedia">שטיקיפדיה</a>
           &mdash; תגובה על:</small> <span style="background-color:#FFE300; color:#D11F2A; padding: 2px">מדי שנה</span></h1>
     </div>
     <div class="row">
@@ -33,6 +36,7 @@
 if (window.top===window) {
     document.getElementById('headline').style.display='inherit';
     document.getElementById('backbuttons').style.display='inherit';
+    document.getElementById('permalink').style.display='none';
   }
   </script>
 </body>
