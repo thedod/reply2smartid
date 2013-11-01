@@ -12,11 +12,17 @@
   </div>
   <div class="container">
     <div id="headline" class="page-header text-center" style="display:none">
-        <h1><small><a href="http://is.gd/shtikipedia">שטיקיפדיה</a>
-          &mdash; תגובה על:</small> <span style="background-color:#FFE300; color:#D11F2A; padding: 2px">שימוש בחתימה אלקטרונית</span></h1>
+        <h1>
+          <small><a href="http://is.gd/shtikipedia">שטיקיפדיה</a> &mdash; תגובה על:</small>
+          <span style="background-color:#FFE300; color:#D11F2A; padding: 2px">שימוש בחתימה אלקטרונית</span>
+        </h1>
     </div>
     <div class="row">
       <div class="col-12">
+        <div class="pull-right" id="logo" style="display:none">
+          <a target="_blank" href="http://no2bio.org" title="ישראל צריכה תעודת זהות חכמה | לא עוד הרפתקה מסוכנת"
+             class="thumbnail"><img src="no2bio64x64.png" width=64 height=64 alt="no2bio.org"></a>
+        </div>
         תאורטית, תוכלו אולי יום אחד לחתום באופן אלקטרוני ולדעת שאיש לא יוכל לחתום אלקטרונית בשמכם.
 מעשית, צריך קודם לפתור את <a target="_blank" href="http://news.nana10.co.il/Article/?ArticleID=988018">ליקויי האבטחה החמורים</a>
 ש<a target="_blank" href="http://blog.ofek.biz/blog/archives/2663">התגלו במערך הגורם המאשר</a>.
@@ -31,6 +37,7 @@
 if (window.top===window) {
     document.getElementById('headline').style.display='inherit';
     document.getElementById('backbuttons').style.display='inherit';
+    document.getElementById('logo').style.display='inherit';
     document.getElementById('permalink').style.display='none';
   }
   </script>

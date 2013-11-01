@@ -12,11 +12,17 @@
   </div>
   <div class="container">
     <div id="headline" class="page-header text-center" style="display:none">
-        <h1><small><a href="http://is.gd/shtikipedia">שטיקיפדיה</a>
-          &mdash; תגובה על:</small> <span style="background-color:#FFE300; color:#D11F2A; padding: 2px">כל תושב או אזרח</span></h1>
+        <h1>
+          <small><a href="http://is.gd/shtikipedia">שטיקיפדיה</a> &mdash; תגובה על:</small>
+          <span style="background-color:#FFE300; color:#D11F2A; padding: 2px">כל תושב או אזרח</span>
+        </h1>
     </div>
     <div class="row">
       <div class="col-12">
+        <div class="pull-right" id="logo" style="display:none">
+          <a target="_blank" href="http://no2bio.org" title="ישראל צריכה תעודת זהות חכמה | לא עוד הרפתקה מסוכנת"
+             class="thumbnail"><img src="no2bio64x64.png" width=64 height=64 alt="no2bio.org"></a>
+        </div>
         רק תושבים ואזרחים שיסכימו להיכלל <a target="_blank" href="http://no2bio.org/what-is-bio-db/">במאגר הביומטרי</a>
 (למרות שאין צורך טכני בכך)
 ו<a targt="_blank" href="https://www.facebook.com/photo.php?fbid=10200184396363051&set=a.1118025401266.2016739.1545951580&type=1&theater">יחתמו</a>
@@ -36,6 +42,7 @@
 if (window.top===window) {
     document.getElementById('headline').style.display='inherit';
     document.getElementById('backbuttons').style.display='inherit';
+    document.getElementById('logo').style.display='inherit';
     document.getElementById('permalink').style.display='none';
   }
   </script>
