@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="he"><head>
+<title>שטיקיפדיה: התוכן</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8"><link href="bootstrap.rtl.min.css" rel="stylesheet" media="screen">
 <link rel="stylesheet" href="gh-fork-ribbon.css" />
 </head><body dir="rtl"><div class="container"><div class="row"><div class="col-12">
@@ -29,7 +30,7 @@ $(function() {
     for (var i=0; i<links.length; i++) {
       section.append(
         $('<li/>').append(
-          $('<a/>').attr('target','_blank').attr('href',links[i][2]).text(links[i][1])
+          $('<a/>').attr('href',links[i][2]).text(links[i][1])
       ));
     };
     $('#items').append($('<li/>').html(page).append(section));

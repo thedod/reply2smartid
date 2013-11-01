@@ -10,8 +10,8 @@ where `selector` is where to find `phrase` (e.g. `"div.cont"`), and `url` is of 
 
 Each time this git is updated, `truthmap.js` has to be manually uploaded into [the tomodo mod](http://tomodo.com/viewsource/1099/) by the mod's owner.
 
-The rest of the files are the popups as html.
+The popups are at static html files in this folder.
+They are generated from files at `raw/` (filenames and metadata are imported from `truthmap.js`).
 
-If you create a new file, best is to use `empty.html` as a template.
+To generate them, see `README` at `generator/`
 
-Crude, but ain't broke :wink:.
