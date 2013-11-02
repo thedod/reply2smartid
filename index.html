@@ -40,7 +40,7 @@ $(function() {
           $('<a/>').attr('href',links[i][2]).addClass('hilite').text(links[i][1])
       ));
     };
-    $('#items').append($('<li/>').append($('<h5/>').text(page)).append(section));
+    $('#items').append($('<li/>').append($('<h5/>').css('direction','ltr').text(page)).append(section));
     console.log(section.html());
   };
 });
