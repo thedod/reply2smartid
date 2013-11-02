@@ -3,10 +3,17 @@
 <title>שטיקיפדיה: התוכן</title>
 <meta http-equiv="content-type" content="text/html; charset=utf-8"><link href="bootstrap.rtl.min.css" rel="stylesheet" media="screen">
 <link rel="stylesheet" href="gh-fork-ribbon.css" />
+<style type="text/css">
+.hilite h4 {
+  background-color:#FFE300; color:#D11F2A; padding: 2px
+}
+</style>
 </head><body dir="rtl"><div class="container"><div class="row"><div class="col-8 col-offset-2">
-כאן מרוכז התוכן של הפופ-אפים שמופיעים
+<h3>
+קישורים קבועים לתוכן של הפופ-אפים 
 ב<strong><a target="_top" href="http://is.gd/shtikipedia">שטיקיפדיה</a></strong>
-של <a target="_top" href="http://no2bio.org">No2Bio</a>.
+של <a target="_top" href="http://no2bio.org">No2Bio</a></h3>
+</p>
 <ul id="items"> </ul>
 </div></div></div>
     <div class="github-fork-ribbon-wrapper left">
@@ -30,10 +37,10 @@ $(function() {
     for (var i=0; i<links.length; i++) {
       section.append(
         $('<li/>').append(
-          $('<a/>').attr('href',links[i][2]).text(links[i][1])
+          $('<a/>').attr('href',links[i][2]).addClass('hilite').append($('<h4/>').text(links[i][1]))
       ));
     };
-    $('#items').append($('<li/>').html(page).append(section));
+    $('#items').append($('<li/>').append($('<h5/>').text(page)).append(section));
     console.log(section.html());
   };
 });
