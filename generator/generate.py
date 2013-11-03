@@ -7,7 +7,8 @@ truthmap = json.load(file('truthmap.json'))
 
 for govpage in truthmap:
     print "=== "+govpage
-    for selector,title,filename in truthmap[govpage]:
+    for truth in truthmap[govpage]:
+        selector,title,filename,longtitle = truth
         print ": ".join((filename, title))
         file('../'+filename,'w').write(
-            renderer.render(template,{ "title":title,"content":unicode(file('../raw/'+filename).read(),'utf-8') }).encode('utf-8'))
+            renderer.render(template,{ "title":longtitle,"content":unicode(file('../raw/'+filename).read(),'utf-8') }).encode('utf-8'))
