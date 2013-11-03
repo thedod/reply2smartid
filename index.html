@@ -1,57 +1,70 @@
-<!doctype html>
-<html lang="he"><head>
-<title>שטיקיפדיה: התוכן</title>
-<meta http-equiv="content-type" content="text/html; charset=utf-8"><link href="bootstrap.rtl.min.css" rel="stylesheet" media="screen">
-<link rel="stylesheet" href="gh-fork-ribbon.css" />
-<style type="text/css">
-.hilite {
-  background-color:#FFE300; color:#D11F2A; padding: 2px
-}
-</style>
-</head><body dir="rtl"><div class="container"><div class="row"><div class="col-8 col-offset-2">
-<h3>
-קישורים קבועים לתוכן של הפופ-אפים 
-ב<strong><a target="_top" href="http://is.gd/shtikipedia">שטיקיפדיה</a></strong>
-של <a target="_top" href="http://no2bio.org">No2Bio</a></h3>
-</p>
-<ul id="items" class="nav nav-stacked"> </ul>
-</div></div></div>
-    <div class="github-fork-ribbon-wrapper left">
-        <div class="github-fork-ribbon">
-            <a href="https://github.com/thedod/reply2smartid/tree/gh-pages">מזלגו את התוכן</a>
-        </div>
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <title>שטיקיפדיה: התוכן</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="bootstrap.rtl.min.css" rel="stylesheet" media="screen" type="text/css">
+</head>
+
+<body dir="rtl">
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topmenu">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="." title="שטיקיפדיה: התוכן"><img src="no2bio-danger22x20.png" alt="סכנה. לא לדחוף אצבעות.">שטיקיפדיה: התוכן</a>
     </div>
-    <div class="github-fork-ribbon-wrapper left-bottom">
-        <div class="github-fork-ribbon">
-            <a href="http://thedod.github.io/faqbuster/">מזלגו את הקוד</a>
-        </div>
+    <div id="topmenu" class="collapse nav-collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">התוכן<b class="caret"></b></a>
+          <ul id="item-menu" class="dropdown-menu" role="menu" aria-labelledby="dLabel"></ul>
+        </li>
+        <li><a href="http://is.gd/shtikipedia">לשטיקיפדיה</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">לעזור<b class="caret"></b></a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <li><a href="https://github.com/thedod/reply2smartid/tree/gh-pages">מזלגו את התוכן</a></li>
+            <li><a href="http://thedod.github.io/faqbuster/">מזלגו את הקוד</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </nav>
+  <div class="container">
+    <div id="headline" class="page-header text-center">
+        <h2>שטיקיפדיה: התוכן</h2>
     </div>
-<script type="text/javascript" src="truthmap.js"></script>
-<script type="text/javascript" src="jquery.min.js"></script>
-<script type="text/javascript">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h4>קישורים קבועים לתוכן של הפופ-אפים ב<strong><a target="_top" href="http://is.gd/shtikipedia">שטיקיפדיה</a></strong> של
+        <a target="_top" href="http://no2bio.org">No2Bio</a></h4>
+          <a href="http://is.gd/shtikipedia" title="לשטיקיפדיה" class="thumbnail"><img src="ouch-shtikipedia.png" alt="שטיקיפדיה"></a>
+        <h4>לניווט &mdash; השתמשו בתפריט <strong>התוכן</strong></h4>
+
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="truthmap.js"></script>
+  <script type="text/javascript" src="jquery.min.js"></script>
+  <script type="text/javascript" src="bootstrap.min.js"></script>
+  <script type="text/javascript">
 $(function() {
   for (page in truthmap) {
-    console.log(page);
     var links = truthmap[page];
-    var section=$('<ul/>').addClass('nav nav-pills nav-stacked');
     for (var i=0; i<links.length; i++) {
-      section.append(
-        $('<li/>').append(
-          $('<a/>').attr('href',links[i][2]).addClass('hilite').text(links[i][1])
-      ));
+      $('#item-menu').append(
+        $('<li/>').append($('<a/>').attr('href',links[i][2]).text(links[i][1]))
+      );
     };
-    $('#items').append($('<li/>').append($('<h5/>').css('direction','ltr').text(page)).append(section));
-    console.log(section.html());
+    $('#item-menu').append($('<li/>').addClass('divider'));
   };
+  $('#item-menu li.divider:last').remove(); // ugly tweak
 });
 </script>
-<!--[if !(lte IE 8)]><!-->
-<script> 
-  (function(){
-    var e = document.createElement('script'); e.type='text/javascript'; e.async = true;
-    e.src = document.location.protocol + '//d1ux67szpr7bp0.cloudfront.net/project-megaphone/widget.min.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s);
-  })();
-</script>
-<!--<![endif]-->
-</body></html>
+</body>
+</html>
