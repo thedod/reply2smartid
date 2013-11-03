@@ -11,11 +11,11 @@ where the phrase itself is often too short and out of context.
 
 Each time this git is updated, `truthmap.js` has to be manually uploaded into [the tomodo mod](http://tomodo.com/viewsource/1099/) by the mod's owner.
 
-The popups are iframes containing static html files in this folder.
-When these files are shown as the top-level windows (aka "permalink view"), they also display title and navigation GUI.
-
+The popups are iframes containing static html files from this folder.
+When these files are shown as the top-level windows (aka "permalink view"), they also display title and navigation GUI.  
 They are generated from files at [raw/](raw/) (filenames and metadata are imported from [truthmap.js](truthmap.js)).
 
-To contribute content: add/edit files at [raw/](raw/) and/or [truthmap.js](truthmap.js),
+To contribute content: add/edit files at [raw/](raw/) and/or [truthmap.js](truthmap.js).
+
 To renerate the static pages: see `README` at [generator/](generator/).
 
