@@ -1,26 +1,52 @@
 <!DOCTYPE html>
 <html lang="he">
 <head>
-  <title>שטיקיפדיה: מסך פתיחה</title>
+  <title>שטיקיפדיה - תגובה על: מסך פתיחה</title>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="bootstrap.rtl.min.css" rel="stylesheet" media="screen" type="text/css">
 </head>
 
 <body dir="rtl">
-  <div id="permalink" style="position:fixed; top:1px; left:1px; z-index:42">
+  <div id="permalink" class="hide-in-permalink" style="position:fixed; top:1px; left:1px; z-index:42">
     <a target="_blank" title="קישור קבוע" href="">#</a>
   </div>
+  <div id="menubar" style="display:none" class="navbar navbar-default show-in-permalink" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topmenu">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="." title="שטיקיפדיה: התוכן"><img src="no2bio-danger22x20.png" alt="סכנה. לא לדחוף אצבעות.">שטיקיפדיה: התוכן</a>
+    </div>
+    <div id="topmenu" class="collapse nav-collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">התוכן<b class="caret"></b></a>
+          <ul id="item-menu" class="dropdown-menu" role="menu" aria-labelledby="dLabel"></ul>
+        </li>
+        <li><a href="http://is.gd/shtikipedia">לשטיקיפדיה</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">לעזור<b class="caret"></b></a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <li><a href="https://github.com/thedod/reply2smartid/tree/gh-pages">מזלגו את התוכן</a></li>
+            <li><a href="http://thedod.github.io/faqbuster/">מזלגו את הקוד</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
   <div class="container">
-    <div id="headline" class="page-header text-center" style="display:none">
-        <h2>
+    <div id="headline" class="page-header text-center show-in-permalink" style="display:none">
+        <h3>
           <small><a href="http://is.gd/shtikipedia">שטיקיפדיה</a> &mdash; תגובה על:</small><br>
           <a href="." style="background-color:#FFE300; color:#D11F2A; padding: 2px">מסך פתיחה</a>
-        </h2>
+        </h3>
     </div>
     <div class="row">
       <div class="col-10 col-offset-1">
-        <div class="pull-right" id="logo" style="display:none">
+        <div class="pull-right show-in-permalink" id="logo" style="display:none">
           <a target="_blank" href="http://no2bio.org" title="ישראל צריכה תעודת זהות חכמה | לא עוד הרפתקה מסוכנת"
              class="thumbnail"><img src="no2bio64x64.png" width=64 height=64 alt="no2bio.org"></a>
         </div>
@@ -37,18 +63,29 @@
   </dl>
 </small>
 
-        <p id="backbuttons" style="text-align:left; display:none">
-        <a class="btn btn-default" href=".">חזרה לתוכן</a>
-        <a class="btn btn-primary btn-lg" href="http://is.gd/shtikipedia">לשטיקיפדיה</a></p>
       </div>
     </div>
-  </div><script type="text/javascript">
-if (window.top===window) {
-    document.getElementById('headline').style.display='inherit';
-    document.getElementById('backbuttons').style.display='inherit';
-    document.getElementById('logo').style.display='inherit';
-    document.getElementById('permalink').style.display='none';
+  </div>
+  <script type="text/javascript" src="truthmap.js"></script>
+  <script type="text/javascript" src="jquery.min.js"></script>
+  <script type="text/javascript" src="bootstrap.min.js"></script>
+  <script type="text/javascript">
+$(function() {
+  for (page in truthmap) {
+    var links = truthmap[page];
+    for (var i=0; i<links.length; i++) {
+      $('#item-menu').append(
+        $('<li/>').append($('<a/>').attr('href',links[i][2]).text(links[i][3]))
+      );
+    };
+    $('#item-menu').append($('<li/>').addClass('divider'));
+  };
+  $('#item-menu li.divider:last').remove(); // ugly tweak
+  if (window.top===window) {
+    $('.hide-in-permalink').hide()
+    $('.show-in-permalink').show()
   }
-  </script>
+});
+</script>
 </body>
 </html>
