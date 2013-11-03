@@ -21,7 +21,9 @@
       <ul class="nav navbar-nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">התוכן<b class="caret"></b></a>
-          <ul id="item-menu" class="dropdown-menu" role="menu" aria-labelledby="dLabel"></ul>
+          <ul id="item-menu" class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <li class="dropdown-header">תגובות למשפטים מתוך האתר של משרד הפנים</li>
+          </ul>
         </li>
         <li><a href="http://is.gd/shtikipedia">לשטיקיפדיה</a></li>
         <li class="dropdown">
@@ -54,19 +56,6 @@
   <script type="text/javascript" src="truthmap.js"></script>
   <script type="text/javascript" src="jquery.min.js"></script>
   <script type="text/javascript" src="bootstrap.min.js"></script>
-  <script type="text/javascript">
-$(function() {
-  for (page in truthmap) {
-    var links = truthmap[page];
-    for (var i=0; i<links.length; i++) {
-      $('#item-menu').append(
-        $('<li/>').append($('<a/>').attr('href',links[i][2]).text(links[i][3]))
-      );
-    };
-    $('#item-menu').append($('<li/>').addClass('divider'));
-  };
-  $('#item-menu li.divider:last').remove(); // ugly tweak
-});
-</script>
+  <script type="text/javascript" src="shtikipedia.js"></script>
 </body>
 </html>
