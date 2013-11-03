@@ -15,5 +15,6 @@ The popups are iframes containing static html files from this folder.
 When these files are shown as the top-level windows (aka "permalink view"), they also display title and navigation GUI.  
 They are generated from files at [raw/](raw/) (filenames and metadata are imported from [truthmap.js](truthmap.js)).
 
-To contribute content: add/edit files at [raw/](raw/) and/or [truthmap.js](truthmap.js), then generate the static pages: see `README` at [generator/](generator/).
+To contribute content: add/edit files at [raw/](raw/) and/or [truthmap.js](truthmap.js).
+To regenerate the static pages: see `README` at [generator/](generator/).
 
